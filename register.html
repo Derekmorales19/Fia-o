@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIA'O - Register</title>
+    <link rel="stylesheet" href="asset/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Fondo decorativo superior izquierdo -->
+    <div class="bg-shape-top"></div>
+
+    <!-- Navbar unificado e idéntico al resto del sistema -->
+    <header class="navbar-container">
+        <div class="navbar-content">
+            <div class="nav-logo">FIA<span>'</span>O</div>
+            <nav class="nav-menu">
+                <a href="owner-dashboard.html" class="nav-link" data-en="Dashboard" data-es="Panel">Dashboard</a>
+                <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
+                <a href="owner-credits.html" class="nav-link" data-en="Credits" data-es="Créditos">Credits</a>
+                <a href="owner-clients.html" class="nav-link" data-en="Clients" data-es="Clientes">Clients</a>
+                <a href="owner-products.html" class="nav-link" data-en="Products" data-es="Productos">Products</a>
+                <a href="owner-reports.html" class="nav-link" data-en="Reports" data-es="Reportes">Reports</a>
+                <a href="contacto.html" class="nav-link" data-en="Support" data-es="Soporte">Support</a>
+            </nav>
+            <div class="nav-right-actions">
+                <button id="lang-btn" class="action-pill-btn">ES</button>
+                <button id="theme-btn" class="action-pill-btn">Theme</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Botón Back to Home -->
+    <div class="back-btn-wrapper">
+        <a href="index.html" class="back-home-btn" data-en="Back to Home" data-es="Volver al Inicio">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+    <!-- Fondo decorativo inferior derecho -->
+    <div class="bg-shape-bottom"></div>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Espacio reservado para la imagen de FIA'O superior -->
+        <div class="brand-logo-box">
+            <img src="asset/img/fiao-logo.png" alt="FIA'O" class="brand-image-placeholder">
+        </div>
+
+        <div class="register-card">
+            <h1 data-en="Create Your FIA´O Account" data-es="Crea tu cuenta de FIA´O">Create Your FIA´O Account</h1>
+            <p class="subtitle" data-en="Choose how you want to use FIA'O" data-es="Elige cómo deseas usar FIA'O">Choose how you want to use FIA'O</p>
+
+            <!-- Selector de Tipo de Cuenta -->
+            <div class="account-type-selector">
+                <div class="account-option active" id="type-owner">
+                    <span class="option-title" data-en="Business Owner" data-es="Propietario de Negocio">Business Owner</span>
+                    <span class="option-desc" data-en="Manage your store." data-es="Gestiona tu tienda.">Manage your store.</span>
+                </div>
+                <div class="account-option" id="type-customer">
+                    <span class="option-title" data-en="Customer" data-es="Cliente">Customer</span>
+                    <span class="option-desc" data-en="View your accounts." data-es="Consulta tus cuentas.">View your accounts.</span>
+                </div>
+            </div>
+
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="fullname" data-en="Full Name" data-es="Nombre Completo">Full Name</label>
+                    <input type="text" id="fullname" placeholder="John Doe" required>
+                </div>
+
+                <!-- Campo dinámico: se oculta si es Customer -->
+                <div class="input-group" id="business-name-group">
+                    <label for="businessname" data-en="Business Name" data-es="Nombre del Negocio">Business Name</label>
+                    <input type="text" id="businessname" placeholder="Minisúper El Ahorro">
+                </div>
+
+                <div class="input-group">
+                    <label for="email" data-en="Email Address" data-es="Correo Electrónico">Email Address</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone" data-en="Phone Number" data-es="Número de Teléfono">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+507 0000-0000" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password" data-en="Password" data-es="Contraseña">Password</label>
+                    <div class="password-box">
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <i class="fa-regular fa-eye toggle-password" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmpassword" data-en="Confirm Password" data-es="Confirmar Contraseña">Confirm Password</label>
+                    <div class="password-box">
+                        <input type="password" id="confirmpassword" placeholder="••••••••" required>
+                        <i class="fa-regular fa-eye toggle-password" id="toggleConfirmPassword"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="sign-in-submit-btn" data-en="Create Account" data-es="Crear Cuenta">Create Account</button>
+
+                <p class="signup-footer-text">
+                    <span data-en="Already have an account?" data-es="¿Ya tienes una cuenta?">Already have an account?</span> 
+                    <a href="login.html" data-en="Sign In" data-es="Iniciar Sesión">Sign In</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <script src="asset/js/register.js"></script>
+</body>
+</html>
