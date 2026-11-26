@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FIA'O - Digital Notebook</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="asset/css/app.css">
 </head>
+
 <body id="top" class="page-home">
 
     <!-- HERO SECTION CON CARRUSEL -->
@@ -14,20 +18,30 @@
 
         <div class="hero-content">
 
-            <h1 class="hero-title" data-en='Your <span class="highlight-credit">credit</span> notebook, now digital.' data-es='Tu libreta de <span class="highlight-credit">crédito</span>, ahora digital.'>
+            <h1 class="hero-title"
+                data-en='Your <span class="highlight-credit">credit</span> notebook, now digital.'
+                data-es='Tu libreta de <span class="highlight-credit">crédito</span>, ahora digital.'>
+
                 Your <span class="highlight-credit">credit</span> notebook, now digital.
+
             </h1>
 
             <p class="hero-subtitle" id="carouselSubtitle"
                data-en="Digitize customer, debt, and payment management for convenience stores in Panama."
                data-es="Digitaliza la gestión de clientes, deudas y pagos para minisupermercados en Panamá.">
+
                 Digitize customer, debt, and payment management for convenience stores in Panama.
+
             </p>
 
             <div class="hero-buttons">
-                <a href="login.html" class="btn-primary-yellow" data-en="Login" data-es="Iniciar Sesión">Login</a>
 
-                <a href="register.html" class="btn-primary-yellow" data-en="Sign up" data-es="Registrarse">Sign up</a>
+                <a href="login.html" class="btn-primary-yellow"
+                   data-en="Login" data-es="Iniciar Sesión">Login</a>
+
+                <a href="register.html" class="btn-primary-yellow"
+                   data-en="Sign up" data-es="Registrarse">Sign up</a>
+
             </div>
 
             <div class="carousel-dots">
@@ -39,6 +53,7 @@
         </div>
 
         <div class="hero-image-side">
+
             <img
                 id="carouselImage"
                 src="asset/img/slide1.png"
@@ -46,11 +61,99 @@
                 class="carousel-img"
                 onerror="this.onerror=null; this.src='https://via.placeholder.com/340x600?text=FIA%27O+App+Preview';"
             >
+
         </div>
 
     </main>
 
-    <script src="asset/js/index.js"></script>
+<!-- FOOTER -->
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+
+            <a href="/" class="footer-logo">
+                <img src="asset/img/fiao-logo.png"
+                     alt="FIA'O Logo"
+                     class="logo-icon">
+
+                <span>FIA'O</span>
+            </a>
+
+            <p>
+                Digital notebook and credit management
+                for modern businesses.
+            </p>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-column">
+
+            <h3>Navigation</h3>
+
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/credits">Credits</a></li>
+                <li><a href="/clients">Clients</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Help & Support -->
+        <div class="footer-column">
+
+            <h3>Help & Support</h3>
+
+            <ul>
+                <li><a href="/help">Help Center</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="mailto:support@example.com">Email Support</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-column">
+
+            <h3>Legal</h3>
+
+            <ul>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms & Conditions</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 FIA'O. All rights reserved.
+        </p>
+
+        <div class="footer-socials">
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="asset/js/index.js"></script>
 
 </body>
 </html>
