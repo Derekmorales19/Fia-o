@@ -1,3 +1,4 @@
+
 :root {
     --primary-red: #A61E22;
     --golden-yellow: #F4B942;
@@ -54,86 +55,6 @@ body {
     background: radial-gradient(circle, rgba(166,30,34,0.08) 0%, rgba(255,247,232,0) 70%);
     z-index: 0;
     pointer-events: none;
-}
-
-/* Navbar: Siempre mantiene su rojo corporativo vibrante y hermoso */
-.navbar-container {
-    width: 100%;
-    padding: 16px 24px;
-    position: relative;
-    z-index: 10;
-}
-
-.navbar-content {
-    background-color: #A61E22 !important; /* Forzado siempre al rojo original */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 24px;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.nav-logo {
-    color: #FFFFFF !important;
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-}
-
-.nav-logo span {
-    color: var(--golden-yellow) !important;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-}
-
-.nav-link {
-    color: #FFFFFF !important;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 20px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* --- ESTILO CORREGIDO PARA LA PESTAÑA ACTIVA (IGUAL QUE EL INDEX) --- */
-.nav-link.active {
-    background-color: var(--golden-yellow) !important;
-    color: #2B2B2B !important;
-    font-weight: 700;
-    border-radius: 20px;
-    padding: 8px 16px;
-}
-
-.nav-right-actions {
-    display: flex;
-    gap: 8px;
-}
-
-.action-pill-btn {
-    background-color: rgba(255, 255, 255, 0.25);
-    color: #FFFFFF !important;
-    border: none;
-    padding: 7px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.action-pill-btn:hover {
-    background-color: #FFFFFF;
-    color: #A61E22 !important;
 }
 
 /* Botón Back to Home */
