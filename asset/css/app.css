@@ -5113,3 +5113,162 @@ body.page-profile .footer-links h4 { font-size: 14px; font-weight: 700; color: v
 body.page-profile .footer-links a { display: block; font-size: 12px; color: var(--subtext); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
 body.page-profile .footer-links a:hover { color: var(--primary-red); }
 body.page-profile .footer-bottom { max-width: 1000px; margin: 0 auto; border-top: 1px solid var(--gray-border); padding-top: 20px; text-align: center; font-size: 11px; color: var(--subtext); }
+
+/* ==========================
+   FIA'O FOOTER
+========================== */
+
+.main-footer {
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+    padding: 55px 5% 25px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 45px;
+}
+
+/* Brand */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #172337;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* FIA'O IMAGE LOGO */
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+    border-radius: 9px;
+}
+
+.footer-brand p {
+    max-width: 300px;
+    margin-top: 18px;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Footer columns */
+
+.footer-column h3 {
+    color: #172337;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 13px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #b98716;
+}
+
+/* Footer bottom */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Social icons */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-socials a {
+    color: #64748b;
+    font-size: 17px;
+    transition: all 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: #b98716;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+    .main-footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
